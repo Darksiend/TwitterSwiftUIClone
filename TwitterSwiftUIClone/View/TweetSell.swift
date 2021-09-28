@@ -19,9 +19,13 @@ struct TweetSell: View {
                     .cornerRadius(56/2)
                     .padding(.leading)
                 VStack(alignment: .leading){
-                    Text("Bruce Wayne")
-                        .font(.system(size: 14, weight: .semibold))
-                    Text("Its Not who iam, but what i do that tam")
+                    HStack {
+                        Text("Bruce Wayne")
+                            .font(.system(size: 14, weight: .semibold))
+                        Text("@batman")
+                        Text("1 h ago")
+                    }
+                    Text("Its Not who iam, but what i do that Iam")
                 }
             }
         }
