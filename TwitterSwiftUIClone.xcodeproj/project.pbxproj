@@ -11,10 +11,13 @@
 		9B1EBFFB27038F3E0067BC93 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1EBFFA27038F3E0067BC93 /* ContentView.swift */; };
 		9B1EBFFD27038F450067BC93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B1EBFFC27038F450067BC93 /* Assets.xcassets */; };
 		9B1EC00027038F450067BC93 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B1EBFFF27038F450067BC93 /* Preview Assets.xcassets */; };
+		9B24140F2704F3E50022F647 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B24140E2704F3E50022F647 /* SearchBar.swift */; };
 		9B8645CA27039BB100832F77 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8645C927039BB100832F77 /* FeedView.swift */; };
 		9B8645CC27039BEF00832F77 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8645CB27039BEF00832F77 /* SearchView.swift */; };
-		9B8645CE27039C0000832F77 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8645CD27039C0000832F77 /* MessagesView.swift */; };
 		9B8645D02703A3C000832F77 /* TweetSell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8645CF2703A3C000832F77 /* TweetSell.swift */; };
+		9B928FF72706491F00A5107D /* UserSell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B928FF62706491F00A5107D /* UserSell.swift */; };
+		9B928FFA27087AAB00A5107D /* ConversationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B928FF927087AAB00A5107D /* ConversationsView.swift */; };
+		9B928FFC27087AC400A5107D /* ConversationSell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B928FFB27087AC400A5107D /* ConversationSell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,10 +26,13 @@
 		9B1EBFFA27038F3E0067BC93 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9B1EBFFC27038F450067BC93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B1EBFFF27038F450067BC93 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9B24140E2704F3E50022F647 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		9B8645C927039BB100832F77 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		9B8645CB27039BEF00832F77 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
-		9B8645CD27039C0000832F77 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 		9B8645CF2703A3C000832F77 /* TweetSell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetSell.swift; sourceTree = "<group>"; };
+		9B928FF62706491F00A5107D /* UserSell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSell.swift; sourceTree = "<group>"; };
+		9B928FF927087AAB00A5107D /* ConversationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsView.swift; sourceTree = "<group>"; };
+		9B928FFB27087AC400A5107D /* ConversationSell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationSell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,13 +100,24 @@
 		9B8645C827039B7300832F77 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9B928FF827087A8D00A5107D /* Messages */,
 				9B1EBFFA27038F3E0067BC93 /* ContentView.swift */,
 				9B8645C927039BB100832F77 /* FeedView.swift */,
 				9B8645CB27039BEF00832F77 /* SearchView.swift */,
-				9B8645CD27039C0000832F77 /* MessagesView.swift */,
 				9B8645CF2703A3C000832F77 /* TweetSell.swift */,
+				9B24140E2704F3E50022F647 /* SearchBar.swift */,
+				9B928FF62706491F00A5107D /* UserSell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		9B928FF827087A8D00A5107D /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				9B928FF927087AAB00A5107D /* ConversationsView.swift */,
+				9B928FFB27087AC400A5107D /* ConversationSell.swift */,
+			);
+			path = Messages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,8 +190,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B8645CE27039C0000832F77 /* MessagesView.swift in Sources */,
+				9B928FFC27087AC400A5107D /* ConversationSell.swift in Sources */,
+				9B928FF72706491F00A5107D /* UserSell.swift in Sources */,
+				9B24140F2704F3E50022F647 /* SearchBar.swift in Sources */,
 				9B8645D02703A3C000832F77 /* TweetSell.swift in Sources */,
+				9B928FFA27087AAB00A5107D /* ConversationsView.swift in Sources */,
 				9B8645CC27039BEF00832F77 /* SearchView.swift in Sources */,
 				9B1EBFFB27038F3E0067BC93 /* ContentView.swift in Sources */,
 				9B8645CA27039BB100832F77 /* FeedView.swift in Sources */,

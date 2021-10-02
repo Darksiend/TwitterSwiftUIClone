@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
         NavigationView{
             
@@ -22,7 +23,7 @@ struct ContentView: View {
                         Image(systemName: "magnifyingglass")
                         Text("Search")
                     }
-                MessagesView()
+                ConversationsView()
                     .tabItem{
                         Image(systemName: "envelope")
                         Text("Messages")
