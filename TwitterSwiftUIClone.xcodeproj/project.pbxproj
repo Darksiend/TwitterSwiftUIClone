@@ -17,7 +17,7 @@
 		9B8645D02703A3C000832F77 /* TweetSell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8645CF2703A3C000832F77 /* TweetSell.swift */; };
 		9B928FF72706491F00A5107D /* UserSell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B928FF62706491F00A5107D /* UserSell.swift */; };
 		9B928FFA27087AAB00A5107D /* ConversationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B928FF927087AAB00A5107D /* ConversationsView.swift */; };
-		9B928FFC27087AC400A5107D /* ConversationSell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B928FFB27087AC400A5107D /* ConversationSell.swift */; };
+		9B928FFC27087AC400A5107D /* ConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B928FFB27087AC400A5107D /* ConversationCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +32,7 @@
 		9B8645CF2703A3C000832F77 /* TweetSell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetSell.swift; sourceTree = "<group>"; };
 		9B928FF62706491F00A5107D /* UserSell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSell.swift; sourceTree = "<group>"; };
 		9B928FF927087AAB00A5107D /* ConversationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsView.swift; sourceTree = "<group>"; };
-		9B928FFB27087AC400A5107D /* ConversationSell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationSell.swift; sourceTree = "<group>"; };
+		9B928FFB27087AC400A5107D /* ConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				9B928FF927087AAB00A5107D /* ConversationsView.swift */,
-				9B928FFB27087AC400A5107D /* ConversationSell.swift */,
+				9B928FFB27087AC400A5107D /* ConversationCell.swift */,
 			);
 			path = Messages;
 			sourceTree = "<group>";
@@ -190,7 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B928FFC27087AC400A5107D /* ConversationSell.swift in Sources */,
+				9B928FFC27087AC400A5107D /* ConversationCell.swift in Sources */,
 				9B928FF72706491F00A5107D /* UserSell.swift in Sources */,
 				9B24140F2704F3E50022F647 /* SearchBar.swift in Sources */,
 				9B8645D02703A3C000832F77 /* TweetSell.swift in Sources */,

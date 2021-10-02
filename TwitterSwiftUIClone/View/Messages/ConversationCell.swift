@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ConversationSell: View {
+struct ConversationCell: View {
     var body: some View {
         VStack {
             HStack(spacing: 12){
@@ -21,17 +21,21 @@ struct ConversationSell: View {
                 VStack(alignment: .leading, spacing: 4){
                     Text("venom")
                         .font(.system(size: 14, weight: .semibold))
-                    Text("Longer messages to see something i dont now what")
-                        .font(.system(size: 14))
+                    Text("Longer message text to see what happenswith i do is")
+                        .font(.system(size: 15))
+                        .lineLimit(2)
+                    
                 }
+                .foregroundColor(.black)
                 .padding(.trailing)
             }
+            Divider()
         }
     }
 }
 
 struct ConversationSell_Previews: PreviewProvider {
     static var previews: some View {
-        ConversationSell()
+        ConversationCell()
     }
 }
