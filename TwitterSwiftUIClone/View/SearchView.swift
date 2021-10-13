@@ -13,9 +13,14 @@ struct SearchView: View {
         ScrollView{
             SearchBar(text: $searchText)
             VStack(alignment: .leading) {
-                ForEach(0..<10) { _ in
+                ForEach(0..<1) { _ in
                     HStack {Spacer()}
+                    
+                    NavigationLink(destination: UserProfileView(), label: {
                         UserSell()
+                    })
+                    
+                        
                     
                 }
             }.padding(.leading)
