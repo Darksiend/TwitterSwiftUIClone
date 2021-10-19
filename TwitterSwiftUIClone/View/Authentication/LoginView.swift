@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct LoginView: View {
-    @EnvironmentObject var viewModel : AuthViewModel
+    
     @State var email = ""
     @State var password = ""
+    @EnvironmentObject var viewModel : AuthViewModel
     var body: some View {
         NavigationView {
             ZStack {

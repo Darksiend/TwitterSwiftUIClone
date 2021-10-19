@@ -6,11 +6,14 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct UserSell: View {
+    let user: User
+    
     var body: some View {
         HStack(spacing: 12){
-            Image("venom-10")
+            KFImage(URL(string: user.profileimageURL))
                 .resizable()
                 .scaledToFill()
                 .clipped()
@@ -18,10 +21,10 @@ struct UserSell: View {
                 .cornerRadius(28)
                 
             VStack(alignment: .leading, spacing: 4){
-                Text("venom")
+                Text(user.username)
                     .font(.system(size: 14, weight: .semibold))
                 
-                Text("Eddie Brock")
+                Text(user.fullname)
                     .font(.system(size: 14))
             }
             .foregroundColor(.black)
@@ -29,8 +32,3 @@ struct UserSell: View {
     }
 }
 
-struct UserSell_Previews: PreviewProvider {
-    static var previews: some View {
-        UserSell()
-    }
-}
