@@ -17,7 +17,7 @@ struct SearchView: View {
                 ForEach(viewModel.users) { user in
                     HStack {Spacer()}
                     
-                    NavigationLink(destination: UserProfileView(), label: {
+                    NavigationLink(destination: UserProfileView( user: user), label: {
                         UserSell(user: user)
                     })
                     

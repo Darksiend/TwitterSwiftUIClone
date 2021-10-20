@@ -13,7 +13,7 @@ class AuthViewModel: ObservableObject {
     @Published var userSession: FirebaseAuth.User?
     @Published var isAuthenticating = false
     @Published var error: Error?
- //   @Published var user: User?
+    @Published var user: User?
     
     init() {
         userSession = Auth.auth().currentUser
@@ -63,11 +63,11 @@ class AuthViewModel: ObservableObject {
                     
                     guard let user = result?.user else {return}
                     
-                    let data =  ["email:":  email ,
-                                 "username:": username.lowercased(),
-                                 "fullname:": fullname,
-                                 "profileimageURL:": profileImageURL,
-                                 "uid:": user.uid ]
+                    let data =  ["email":  email ,
+                                 "username": username.lowercased(),
+                                 "fullname": fullname,
+                                 "profileImageURL": profileImageURL,
+                                 "uid": user.uid ]
                     
                     Firestore.firestore().collection("users").document(user.uid).setData(data) { _ in
                         print("DEBUG! Succsesfully uploaded user data!")
@@ -95,14 +95,16 @@ class AuthViewModel: ObservableObject {
     func fetchUser(){
         guard let uid = userSession?.uid else { return }
         print("DEBUG! UID: \(uid)")
-        Firestore.firestore().collection("users").document(uid).getDocument { snapshot,  _ in
-
-            guard let data = snapshot?.data() else {return}
+        Firestore.firestore().collection("users").document(uid).getDocument { snapshot,  error in
+            if let error = error {
+                print("DEBUG! Error: \(error.localizedDescription)")
+                return
+            }
+            guard let data = snapshot?.data() else {return}            
             let user = User(dictionary: data)
             
-            print("DEBUG!: User is \(user.username)")
+            print("DEBUG!: User is \(user)")
         }
     }
 }
- 
 

@@ -12,6 +12,7 @@ class SearchViewModel: ObservableObject {
     @Published var users =  [User]()
     init() {
         fetchUsers()
+        
     }
     func fetchUsers() {
         COLLECTION_USERS.getDocuments { snapshot, error in
