@@ -45,6 +45,7 @@
 		9BA2C1B427160C96007676F9 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA2C1B327160C96007676F9 /* ProfileHeaderView.swift */; };
 		9BA2C1B627160CB4007676F9 /* ProfileActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA2C1B527160CB4007676F9 /* ProfileActionButtonView.swift */; };
 		9BA2C1B827160CE0007676F9 /* FilterButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA2C1B727160CE0007676F9 /* FilterButtonView.swift */; };
+		9BEC7C222721B84700B67D2D /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEC7C212721B84700B67D2D /* ProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +84,7 @@
 		9BA2C1B327160C96007676F9 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		9BA2C1B527160CB4007676F9 /* ProfileActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileActionButtonView.swift; sourceTree = "<group>"; };
 		9BA2C1B727160CE0007676F9 /* FilterButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButtonView.swift; sourceTree = "<group>"; };
+		9BEC7C212721B84700B67D2D /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 			children = (
 				9B11F0BB271C63680091F15E /* AuthViewModel.swift */,
 				9B39F8F8271F09B4000DE11E /* SearchViewModel.swift */,
+				9BEC7C212721B84700B67D2D /* ProfileViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				9B8645D02703A3C000832F77 /* TweetSell.swift in Sources */,
 				9B31812E271A2EEE008CEA8F /* LoginView.swift in Sources */,
 				9B781B48271767710067EA06 /* NewTweetView.swift in Sources */,
+				9BEC7C222721B84700B67D2D /* ProfileViewModel.swift in Sources */,
 				9BA2C1B827160CE0007676F9 /* FilterButtonView.swift in Sources */,
 				9B928FFA27087AAB00A5107D /* ConversationsView.swift in Sources */,
 				9B0B5B8C271B2ECF0063D54F /* ImagePicker.swift in Sources */,
