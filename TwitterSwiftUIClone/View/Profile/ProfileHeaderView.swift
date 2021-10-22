@@ -9,10 +9,15 @@ import SwiftUI
 import Kingfisher
 
 struct ProfileHeaderView: View {
+    
     @Binding var isFollowed : Bool
+    
     let viewModel: ProfileViewModel
+    
     var body: some View {
+        
         VStack{
+            
             KFImage(URL(string: viewModel.user.profileImageURL))
                 .resizable()
                 .scaledToFill()
@@ -32,6 +37,7 @@ struct ProfileHeaderView: View {
                 .padding(.top, 8)
             
             HStack(spacing: 40){
+                
                 VStack{
                     Text("12")
                         .font(.system(size: 16)).bold()
