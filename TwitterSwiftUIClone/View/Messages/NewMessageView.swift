@@ -23,15 +23,9 @@ struct NewMessageView: View {
                         self.startChat.toggle()
                     }, label: { UserSell(user: user)})
                     
-                    
                 }
             }.padding(.leading)
         }
     }
 }
 
-struct NewMessageView_Previews: PreviewProvider {
-    static var previews: some View {
-        NewMessageView(show: .constant(true), startChat: .constant( false))
-    }
-}

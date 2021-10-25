@@ -19,6 +19,8 @@ class AuthViewModel: ObservableObject {
     
     @Published var user: User?
     
+    static let shared = AuthViewModel()
+    
     init() {
         
         userSession = Auth.auth().currentUser
@@ -37,9 +39,13 @@ class AuthViewModel: ObservableObject {
                 return
             }
             
-            print("DEBUG!: Sucssesfully logged in!")
+            
             
             self.userSession = result?.user
+            
+            self.fetchUser()
+            
+            print("DEBUG!: Sucssesfully logged in!")
             
         }
     }
@@ -93,6 +99,8 @@ class AuthViewModel: ObservableObject {
                         print("DEBUG! Succsesfully uploaded user data!")
                         
                         self.userSession = user
+                        
+                        self.fetchUser()
                     }
                     
                     print("DEBUG!: Successfully signed up user!")
@@ -127,9 +135,9 @@ class AuthViewModel: ObservableObject {
             }
             guard let data = snapshot?.data() else {return}
             
-            let user = User(dictionary: data)
+            self.user = User(dictionary: data)
             
-            print("DEBUG!: User is \(user.username)")
+            
         }
     }
     
