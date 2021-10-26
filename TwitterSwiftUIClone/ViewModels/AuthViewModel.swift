@@ -116,6 +116,8 @@ class AuthViewModel: ObservableObject {
         
         userSession = nil
         
+        user = nil
+        
         try? Auth.auth().signOut()
     }
     

@@ -31,6 +31,7 @@
 		9B39F8F7271F0894000DE11E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9B39F8F6271F0894000DE11E /* Kingfisher */; };
 		9B39F8F9271F09B4000DE11E /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B39F8F8271F09B4000DE11E /* SearchViewModel.swift */; };
 		9B39F8FB271F0A98000DE11E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B39F8FA271F0A98000DE11E /* Constants.swift */; };
+		9B4DAE202727567E00E06D1A /* UploadTweetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4DAE1F2727567E00E06D1A /* UploadTweetViewModel.swift */; };
 		9B4FAC17271C3E6500909F87 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B4FAC16271C3E6500909F87 /* GoogleService-Info.plist */; };
 		9B781B48271767710067EA06 /* NewTweetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B781B47271767710067EA06 /* NewTweetView.swift */; };
 		9B8645CA27039BB100832F77 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8645C927039BB100832F77 /* FeedView.swift */; };
@@ -69,6 +70,7 @@
 		9B39F8F3271EE7F8000DE11E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9B39F8F8271F09B4000DE11E /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		9B39F8FA271F0A98000DE11E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9B4DAE1F2727567E00E06D1A /* UploadTweetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadTweetViewModel.swift; sourceTree = "<group>"; };
 		9B4FAC12271C3E1A00909F87 /* TwitterSwiftUIClone.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = TwitterSwiftUIClone.xcodeproj; sourceTree = "<group>"; };
 		9B4FAC16271C3E6500909F87 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9B781B47271767710067EA06 /* NewTweetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTweetView.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				9B11F0BB271C63680091F15E /* AuthViewModel.swift */,
 				9B39F8F8271F09B4000DE11E /* SearchViewModel.swift */,
 				9BEC7C212721B84700B67D2D /* ProfileViewModel.swift */,
+				9B4DAE1F2727567E00E06D1A /* UploadTweetViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				9BEC7C222721B84700B67D2D /* ProfileViewModel.swift in Sources */,
 				9BA2C1B827160CE0007676F9 /* FilterButtonView.swift in Sources */,
 				9B928FFA27087AAB00A5107D /* ConversationsView.swift in Sources */,
+				9B4DAE202727567E00E06D1A /* UploadTweetViewModel.swift in Sources */,
 				9B0B5B8C271B2ECF0063D54F /* ImagePicker.swift in Sources */,
 				9B2D789227158A0F0039F446 /* ChatBubble.swift in Sources */,
 				9B8645CC27039BEF00832F77 /* SearchView.swift in Sources */,
