@@ -15,7 +15,7 @@ struct FeedView: View {
     var body: some View {
         ZStack(alignment: .bottomTrailing){
             ScrollView{
-                LazyVStack{
+                VStack{
                     ForEach(viewModel.tweets) { tweet in
                         NavigationLink(destination: TweetDetailView(tweet: tweet)) {
                             TweetCell(tweet: tweet)
@@ -25,7 +25,11 @@ struct FeedView: View {
                 .padding()
             }
             
-            Button(action: { isShowingNewTweetView.toggle() }, label: {
+            Button(action: {
+                isShowingNewTweetView.toggle()
+            
+                
+            }, label: {
                 Image("tweet")
                     .resizable()
                     .renderingMode(.template)

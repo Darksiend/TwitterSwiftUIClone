@@ -51,9 +51,9 @@ class TweetActionViewModel: ObservableObject {
             guard let didLike = snapshot?.exists else {return}
             self.didLike = didLike
         }
-                                                                                                
-        
-
     }
+    
+    
+    
 }
 

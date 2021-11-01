@@ -34,14 +34,14 @@ struct UserProfileView: View {
                 FilterButtonView(selectedOption: $selectedFilter)
                     .padding()
                 
-                ForEach(0..<9) { tweet in
+                ForEach(viewModel.tweets(forFilter: selectedFilter)) { tweet in
                     
-//                    TweetCell()
-//                        .padding()
+                    TweetCell(tweet: tweet)
+                        .padding()
                 }
             }
             
-            .navigationTitle("Batman")
+            .navigationTitle("@\(user.username)")
         }
     }
 }
