@@ -20,18 +20,12 @@ class SearchViewModel: ObservableObject {
     func fetchUsers() {
         
         COLLECTION_USERS.getDocuments { snapshot, error in
-            
-            if let error = error {
-                
-                print("DEBUG! Error: \(error.localizedDescription)")
-                
-                return
-            }
             guard let documents = snapshot?.documents else {return}
-            
             self.users = documents.map({ User(dictionary: $0.data()) })
-            
-            print("DEBUG!: Users is \(self.users)")
         }
+    }
+    func filteredUsers(_ query: String ) -> [User] {
+        let lowercasedQuery = query.lowercased()
+        return users.filter({ $0.fullname.lowercased().contains(lowercasedQuery) || $0.username.contains(lowercasedQuery ) })
     }
 }
